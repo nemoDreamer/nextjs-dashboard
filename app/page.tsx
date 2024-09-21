@@ -1,4 +1,5 @@
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import type { Metadata } from "next";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -6,6 +7,10 @@ import Link from "next/link";
 import AcmeLogo from "@/app/ui/acme-logo";
 import { lusitana } from "@/app/ui/fonts";
 import styles from "@/app/ui/home.module.css";
+
+export const metadata: Metadata = {
+  title: "Welcome",
+};
 
 export default function Page() {
   return (
